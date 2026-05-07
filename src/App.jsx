@@ -1,9 +1,7 @@
-
+import Routing from "./Components/Routing/Routing";
 
 const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+  return <Routing />;
+};
 
-export default App
+export default App;
