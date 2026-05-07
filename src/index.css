@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+body {
+      font-family: 'Inter', sans-serif;
+}
+
+@keyframes gradientMove {
+      0% {
+            background-position: 0% 50%;
+      }
+
+      100% {
+            background-position: 200% 50%;
+      }
+}
+
+body {
+      overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+      display: none;
+}
+
+html {
+      scrollbar-width: none;
+}
