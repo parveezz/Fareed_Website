@@ -1,5 +1,5 @@
 import Footer from "../../shared/Footer"
-import Testimonials from "../../shared/testimonials"
+import TestimonialSection from "../../shared/TestimonialSection"
 import ConsultationSection from "./ConsultationSection"
 import CorePanelSystems from "./CorePanelSystems"
 import Hero from "./Hero"
@@ -11,7 +11,7 @@ const Home = () => {
                   <Hero />
                   <CorePanelSystems />
                   <ConsultationSection />
-                  <Testimonials />
+                  <TestimonialSection />
                   <Footer />
             </>
       )
