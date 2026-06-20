@@ -1,10 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import "tailwindcss";
 
+@theme {
+      --font-sans: 'Montserrat', sans-serif;
+      --animate-marquee: marquee 8s linear infinite;
+
+      @keyframes marquee {
+            0% {
+                  transform: translateX(0%);
+            }
+            100% {
+                  transform: translateX(-50%);
+            }
+      }
+}
 
 body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Montserrat', sans-serif;
 }
 
 @keyframes gradientMove {
@@ -27,4 +40,10 @@ body {
 
 html {
       scrollbar-width: none;
+      font-size: 14.5px !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
+      font-weight: 500 !important;
 }

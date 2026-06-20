@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, ArrowUpRight } from "lucide-react";
 
 const Footer = () => {
       return (
-            <footer className="w-full bg-[#07152f] text-white border-t border-yellow-500/20">
+            <footer className="w-full bg-zinc-950 text-white border-t border-zinc-800/60">
                   <div className="max-w-7xl mx-auto px-6 md:px-12 py-16">
 
                         {/* Top Section */}
@@ -14,7 +14,7 @@ const Footer = () => {
                                     <Link to="/" className="inline-block mb-5">
                                           <h2 className="text-2xl font-extrabold uppercase tracking-[0.2em]">
                                                 <span className="text-white">Fareed</span>{" "}
-                                                <span className="text-[#FFD700]">Electricals</span>
+                                                <span className="text-zinc-400">Electricals</span>
                                           </h2>
                                     </Link>
 
@@ -26,20 +26,20 @@ const Footer = () => {
 
                               {/* Quick Links */}
                               <div>
-                                    <h3 className="text-lg font-bold uppercase mb-5 text-[#FFD700]">
+                                    <h3 className="text-lg font-bold uppercase mb-5 text-zinc-300">
                                           Quick Links
                                     </h3>
                                     <div className="flex flex-col gap-3 text-gray-300">
-                                          <Link to="/" className="hover:text-[#FFD700] transition">Home</Link>
-                                          <Link to="/about" className="hover:text-[#FFD700] transition">About Us</Link>
-                                          <Link to="/work" className="hover:text-[#FFD700] transition">Work</Link>
-                                          <Link to="/services" className="hover:text-[#FFD700] transition">Services</Link>
+                                          <Link to="/" className="hover:text-zinc-400 transition">Home</Link>
+                                          <Link to="/about" className="hover:text-zinc-400 transition">About Us</Link>
+                                          <Link to="/work" className="hover:text-zinc-400 transition">Work</Link>
+                                          <Link to="/services" className="hover:text-zinc-400 transition">Services</Link>
                                     </div>
                               </div>
 
                               {/* Services */}
                               <div>
-                                    <h3 className="text-lg font-bold uppercase mb-5 text-[#FFD700]">
+                                    <h3 className="text-lg font-bold uppercase mb-5 text-zinc-300">
                                           Core Systems
                                     </h3>
                                     <div className="flex flex-col gap-3 text-gray-300 text-sm">
@@ -50,25 +50,24 @@ const Footer = () => {
                                     </div>
                               </div>
 
-                              {/* Contact */}
                               <div>
-                                    <h3 className="text-lg font-bold uppercase mb-5 text-[#FFD700]">
+                                    <h3 className="text-lg font-bold uppercase mb-5 text-zinc-300">
                                           Contact
                                     </h3>
 
                                     <div className="space-y-4 text-gray-300 text-sm">
                                           <p className="flex items-start gap-3">
-                                                <MapPin size={18} className="text-[#FFD700] mt-0.5" />
+                                                <MapPin size={18} className="text-zinc-400 mt-0.5" />
                                                 Hyderabad, India
                                           </p>
 
                                           <p className="flex items-center gap-3">
-                                                <Phone size={18} className="text-[#FFD700]" />
+                                                <Phone size={18} className="text-zinc-400" />
                                                 +91 98484 76704
                                           </p>
 
                                           <p className="flex items-center gap-3">
-                                                <Mail size={18} className="text-[#FFD700]" />
+                                                <Mail size={18} className="text-zinc-400" />
                                                 info@fareedelectricals.com
                                           </p>
                                     </div>
@@ -83,7 +82,7 @@ const Footer = () => {
 
                               <Link
                                     to="/contact"
-                                    className="inline-flex items-center gap-2 bg-[#FFD700] hover:bg-orange-400 text-[#07152f] font-bold px-6 py-3 rounded-full transition-all duration-300"
+                                    className="inline-flex items-center gap-2 bg-zinc-850 border border-zinc-800 hover:bg-zinc-800 hover:border-zinc-700 text-white font-bold px-6 py-3 rounded-full transition-all duration-300"
                               >
                                     Get Started
                                     <ArrowUpRight size={18} />

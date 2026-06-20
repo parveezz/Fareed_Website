@@ -8,22 +8,22 @@ const ConsultationSection = () => {
                         {/* Main Card */}
                         <div className="relative overflow-hidden bg-white border border-gray-100 rounded-2xl shadow-sm">
 
-                              {/* Decorative Accent */}
-                              <div className="absolute top-0 right-0 w-40 h-40 bg-[#0b1d4d]/5 rounded-full -mr-20 -mt-20"></div>
-                              <div className="absolute bottom-0 left-0 w-28 h-28 bg-orange-500/5 rounded-full -ml-14 -mb-14"></div>
+                               {/* Decorative Accent */}
+                              <div className="absolute top-0 right-0 w-40 h-40 bg-zinc-900/5 rounded-full -mr-20 -mt-20"></div>
+                              <div className="absolute bottom-0 left-0 w-28 h-28 bg-neutral-500/5 rounded-full -ml-14 -mb-14"></div>
 
                               <div className="p-6 sm:p-10 md:p-16 lg:p-20 relative z-10">
 
                                     {/* Heading */}
                                     <div className="mb-6 md:mb-8">
                                           <h2
-                                                className="font-extrabold uppercase text-[#0b1d4d] leading-[1.05]
+                                                className="font-extrabold uppercase text-zinc-900 leading-[1.05]
                 text-[clamp(1.8rem,5vw,4rem)]"
                                           >
                                                 Consult with our Applications Engineers
                                           </h2>
 
-                                          <div className="w-24 h-2 bg-orange-500 mt-4"></div>
+                                          <div className="w-24 h-2 bg-zinc-800 mt-4"></div>
                                     </div>
 
                                     {/* Description */}
@@ -38,7 +38,7 @@ const ConsultationSection = () => {
                                     {/* CTA Button */}
                                     <Link
                                           to="/contact"
-                                          className="inline-block w-full sm:w-auto text-center bg-[#0b1d4d] hover:bg-orange-500 text-white font-bold uppercase tracking-wider px-10 py-4 md:px-12 md:py-5 text-sm md:text-base transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95"
+                                          className="inline-block w-full sm:w-auto text-center bg-zinc-900 hover:bg-zinc-800 text-white font-bold uppercase tracking-wider px-10 py-4 md:px-12 md:py-5 text-sm md:text-base transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95"
                                     >
                                           Request Consultation
                                     </Link>

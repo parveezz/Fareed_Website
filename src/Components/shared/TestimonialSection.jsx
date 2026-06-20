@@ -9,7 +9,7 @@ const TestimonialSection = () => {
             role: "Executive Director",
             content:
                   "The implementation was seamless and the results exceeded our expectations. Highly recommended for enterprise solutions.",
-            avatar: `https://i.pravatar.cc/150?u=${i}`,
+            avatar: "/avatar-placeholder.jpg",
             rating: 5,
       }));
 
@@ -38,29 +38,29 @@ const TestimonialSection = () => {
                         {/* Heading Section */}
                         <div className="mb-12 md:mb-16 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
 
-                              {/* Left Side */}
+                               {/* Left Side */}
                               <div className="flex flex-col">
                                     <h2
-                                          className="font-extrabold uppercase text-[#0b1d4d] leading-tight
-                                          text-[clamp(2.2rem,5vw,4.5rem)]"
+                                          className="font-extrabold uppercase text-zinc-900 leading-tight
+                                           text-[clamp(2.2rem,5vw,4.5rem)]"
                                     >
                                           Client Testimonials
                                     </h2>
-                                    <div className="w-24 h-2 bg-orange-500 mt-3"></div>
+                                    <div className="w-24 h-2 bg-zinc-800 mt-3"></div>
                               </div>
 
                               {/* Right Side Navigation */}
                               <div className="flex items-center gap-3 self-start sm:self-auto">
                                     <button
                                           onClick={prevSlide}
-                                          className="p-3 bg-white border border-gray-200 hover:bg-[#0b1d4d] hover:text-white transition-all duration-300 shadow-sm"
+                                          className="p-3 bg-white border border-gray-200 hover:bg-zinc-900 hover:text-white transition-all duration-300 shadow-sm"
                                     >
                                           <ChevronLeft size={24} />
                                     </button>
 
                                     <button
                                           onClick={nextSlide}
-                                          className="p-3 bg-white border border-gray-200 hover:bg-orange-500 hover:text-white transition-all duration-300 shadow-sm"
+                                          className="p-3 bg-white border border-gray-200 hover:bg-zinc-900 hover:text-white transition-all duration-300 shadow-sm"
                                     >
                                           <ChevronRight size={24} />
                                     </button>
@@ -69,14 +69,14 @@ const TestimonialSection = () => {
 
                         {/* Testimonials Grid */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                              {visibleTestimonials.map((item) => (
+                               {visibleTestimonials.map((item) => (
                                     <div
                                           key={item.id}
                                           className="bg-white border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 group flex flex-col p-8"
                                     >
                                           {/* Quote */}
                                           <Quote
-                                                className="text-[#0b1d4d]/10 group-hover:text-orange-500/20 transition-colors duration-300 mb-4"
+                                                className="text-zinc-900/10 group-hover:text-zinc-500/20 transition-colors duration-300 mb-4"
                                                 size={42}
                                           />
 
@@ -86,7 +86,7 @@ const TestimonialSection = () => {
                                                       <Star
                                                             key={starIndex}
                                                             size={16}
-                                                            className="fill-orange-500 text-orange-500"
+                                                            className="fill-zinc-500 text-zinc-500"
                                                       />
                                                 ))}
                                           </div>
@@ -101,11 +101,11 @@ const TestimonialSection = () => {
                                                 <img
                                                       src={item.avatar}
                                                       alt={item.name}
-                                                      className="w-14 h-14 rounded-full object-cover border-2 border-orange-500"
+                                                      className="w-14 h-14 rounded-full object-cover border-2 border-zinc-300"
                                                 />
 
                                                 <div>
-                                                      <h4 className="font-black uppercase text-[#0b1d4d] leading-tight">
+                                                      <h4 className="font-black uppercase text-zinc-900 leading-tight">
                                                             {item.name}
                                                       </h4>
 
@@ -120,11 +120,11 @@ const TestimonialSection = () => {
 
                         {/* Page Indicators */}
                         <div className="flex justify-center gap-2 mt-10">
-                              {[...Array(totalPages)].map((_, i) => (
+                               {[...Array(totalPages)].map((_, i) => (
                                     <div
                                           key={i}
                                           className={`h-1.5 rounded-full transition-all duration-300 ${currentPage === i
-                                                ? "w-8 bg-orange-500"
+                                                ? "w-8 bg-zinc-900"
                                                 : "w-2 bg-gray-300"
                                                 }`}
                                     />

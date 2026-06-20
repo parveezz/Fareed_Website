@@ -10,8 +10,7 @@ const CorePanelSystems = () => {
                   description:
                         "Centralized control for industrial electric motors with heavy-duty busbars and integrated protection.",
                   specs: "NEMA 1, 3R, 4X, 12",
-                  image:
-                        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=900&q=80",
+                  image: "/project-imcc.jpg",
             },
             {
                   id: "distribution",
@@ -19,8 +18,7 @@ const CorePanelSystems = () => {
                   description:
                         "Main power routing systems built for safe electrical distribution in commercial and industrial facilities.",
                   specs: "Up to 6000A, 600VAC",
-                  image:
-                        "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=900&q=80",
+                  image: "/project-mdb.jpg",
             },
             {
                   id: "plc",
@@ -28,8 +26,7 @@ const CorePanelSystems = () => {
                   description:
                         "Industrial automation and process control panels engineered for reliable system management.",
                   specs: "Custom programmed",
-                  image:
-                        "https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=900&q=80",
+                  image: "/project-plc.jpg",
             },
             {
                   id: "vfd",
@@ -37,8 +34,7 @@ const CorePanelSystems = () => {
                   description:
                         "Variable Frequency Drive systems for precise motor speed control and energy optimization.",
                   specs: "Harmonic filtering incl.",
-                  image:
-                        "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=900&q=80",
+                  image: "/project-busbar.jpg",
             },
             {
                   id: "capacitor",
@@ -46,8 +42,7 @@ const CorePanelSystems = () => {
                   description:
                         "Automatic Power Factor Correction panels to maintain unity power factor and reduce energy penalties.",
                   specs: "Microprocessor based",
-                  image:
-                        "https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&w=900&q=80",
+                  image: "/project-apfc.jpg",
             },
       ];
 
@@ -78,23 +73,23 @@ const CorePanelSystems = () => {
                         {/* Heading Section */}
                         <div className="mb-12 md:mb-16 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
 
-                              {/* Left Side */}
+                               {/* Left Side */}
                               <div className="flex flex-col">
                                     <h2
-                                          className="font-extrabold uppercase text-[#0b1d4d] leading-tight
+                                          className="font-extrabold uppercase text-zinc-900 leading-tight
           text-[clamp(2.2rem,5vw,4.5rem)] whitespace-nowrap"
                                     >
                                           Core Panel Systems
                                     </h2>
-                                    <div className="w-24 h-2 bg-orange-500 mt-3"></div>
-                              </div>
+                                    <div className="w-24 h-2 bg-zinc-800 mt-3"></div>
+                               </div>
 
                               {/* Right Side Navigation */}
                               <div className="flex items-center gap-3 self-start sm:self-auto">
                                     <button
                                           onClick={prevSlide}
                                           disabled={currentIndex === 0}
-                                          className="p-3 bg-white border border-gray-200 hover:bg-[#0b1d4d] hover:text-white disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-300 shadow-sm"
+                                          className="p-3 bg-white border border-gray-200 hover:bg-zinc-900 hover:text-white disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-300 shadow-sm"
                                     >
                                           <ChevronLeft size={24} />
                                     </button>
@@ -102,7 +97,7 @@ const CorePanelSystems = () => {
                                     <button
                                           onClick={nextSlide}
                                           disabled={currentIndex + cardsPerPage >= corePanels.length}
-                                          className="p-3 bg-white border border-gray-200 hover:bg-orange-500 hover:text-white disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-300 shadow-sm"
+                                          className="p-3 bg-white border border-gray-200 hover:bg-zinc-900 hover:text-white disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-300 shadow-sm"
                                     >
                                           <ChevronRight size={24} />
                                     </button>
@@ -112,7 +107,7 @@ const CorePanelSystems = () => {
 
                         {/* Cards Grid */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                              {visiblePanels.map((panel, index) => (
+                               {visiblePanels.map((panel, index) => (
                                     <div
                                           key={index}
                                           className="bg-white border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 group flex flex-col"
@@ -124,12 +119,12 @@ const CorePanelSystems = () => {
                                                       alt={panel.title}
                                                       className="w-full h-full object-cover grayscale-[40%] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                                                 />
-                                                <div className="absolute inset-0 bg-[#0b1d4d]/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                                                <div className="absolute inset-0 bg-zinc-900/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                           </div>
 
                                           {/* Content */}
                                           <div className="p-6 md:p-8 flex flex-col flex-grow">
-                                                <h3 className="text-lg md:text-xl font-black uppercase text-[#0b1d4d] mb-4 leading-tight">
+                                                <h3 className="text-lg md:text-xl font-black uppercase text-zinc-900 mb-4 leading-tight">
                                                       {panel.title}
                                                 </h3>
 
@@ -143,19 +138,19 @@ const CorePanelSystems = () => {
                                                             <span className="text-[10px] font-bold uppercase text-gray-400 tracking-[0.2em] block mb-1">
                                                                   Engineering Specs
                                                             </span>
-                                                            <p className="text-xs font-mono font-bold text-orange-600">
+                                                            <p className="text-xs font-mono font-bold text-zinc-650">
                                                                   {panel.specs}
                                                             </p>
                                                       </div>
 
                                                       <Link
                                                             to={`/services/${panel.id}`}
-                                                            className="inline-flex items-center gap-2 text-[#0b1d4d] font-bold text-sm uppercase tracking-wider group/link"
+                                                            className="inline-flex items-center gap-2 text-zinc-900 font-bold text-sm uppercase tracking-wider group/link hover:text-zinc-700 transition-colors duration-350"
                                                       >
                                                             Read More
                                                             <ArrowRight
                                                                   size={18}
-                                                                  className="group-hover/link:translate-x-2 transition-transform duration-300 text-orange-500"
+                                                                  className="group-hover/link:translate-x-2 transition-all duration-300 text-zinc-500 group-hover/link:text-zinc-700"
                                                             />
                                                       </Link>
                                                 </div>
